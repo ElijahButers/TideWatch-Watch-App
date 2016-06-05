@@ -19,6 +19,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
       smallFlat.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "tide_high")!)
       handler(smallFlat)
     }
+    else if complication.family == .UtilitarianLarge {
+        let largeFlat = CLKComplicationTemplateUtilitarianLargeFlat()
+        largeFlat.textProvider = CLKSimpleTextProvider(text: "Rising, +2.6m", shortText: "+2.6m")
+        largeFlat.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "tide_high")!)
+        handler(largeFlat)
+    }
     //handler(nil)
   }
   
