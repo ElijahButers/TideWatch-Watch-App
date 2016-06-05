@@ -35,6 +35,7 @@
 		4DF83F1A1B589FD700A30DC7 /* MeasurementStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF83F181B589FD700A30DC7 /* MeasurementStation.swift */; };
 		4DF83F1D1B59E08800A30DC7 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF83F1C1B59E08800A30DC7 /* LineChart.swift */; };
 		4DF83F1F1B59ECA400A30DC7 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF83F1E1B59ECA400A30DC7 /* StationsViewController.swift */; };
+		E2F7E5A81D04A1DF006C4813 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7E5A71D04A1DF006C4813 /* ComplicationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		4DF83F181B589FD700A30DC7 /* MeasurementStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementStation.swift; sourceTree = "<group>"; };
 		4DF83F1C1B59E08800A30DC7 /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		4DF83F1E1B59ECA400A30DC7 /* StationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		E2F7E5A71D04A1DF006C4813 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				4DF83EFF1B58957100A30DC7 /* ExtensionDelegate.swift */,
 				4DF83F011B58957100A30DC7 /* Assets.xcassets */,
 				4DF83F031B58957100A30DC7 /* Info.plist */,
+				E2F7E5A71D04A1DF006C4813 /* ComplicationController.swift */,
 			);
 			path = "TideWatch WatchKit App Extension";
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				4DF83F1A1B589FD700A30DC7 /* MeasurementStation.swift in Sources */,
 				4D2B682E1B5CA4050066C012 /* StationRowController.swift in Sources */,
 				4D2B68311B5CB2A70066C012 /* Theme.swift in Sources */,
+				E2F7E5A81D04A1DF006C4813 /* ComplicationController.swift in Sources */,
 				4D2B68281B5C9EDE0066C012 /* DetailsInterfaceController.swift in Sources */,
 				4D2B682C1B5CA2D50066C012 /* WaterLevelRowController.swift in Sources */,
 			);
