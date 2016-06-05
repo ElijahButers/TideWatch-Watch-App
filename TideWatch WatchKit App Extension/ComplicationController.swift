@@ -13,7 +13,13 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
   // MARK: Register
   func getPlaceholderTemplateForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTemplate?) -> Void) {
     
-    handler(nil)
+    if complication.family == .UtilitarianSmall {
+      let smallFlat = CLKComplicationTemplateUtilitarianSmallFlat()
+      smallFlat.textProvider = CLKSimpleTextProvider(text: "+2.6m")
+      smallFlat.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "tide_high")!)
+      handler(smallFlat)
+    }
+    //handler(nil)
   }
   
   func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimelineEntry?) -> Void) {
