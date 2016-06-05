@@ -56,6 +56,14 @@ final class WaterLevel: NSObject {
   override var description: String {
     return "WaterLevel: \(height)"
   }
+  
+  var shortTextForComplication: String {
+    return String(format: "%.1fm", height)
+  }
+  
+  var longTextForComplication: String {
+    return String(format: "%@, %.1fm", situation.rawValue, height)
+  }
 }
 
 // MARK: NSCoding

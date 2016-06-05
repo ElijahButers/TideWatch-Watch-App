@@ -199,9 +199,9 @@
 				4DF83F101B5895A900A30DC7 /* Controllers */,
 				4D2B682A1B5CA2B60066C012 /* Row Controllers */,
 				4DF83EFF1B58957100A30DC7 /* ExtensionDelegate.swift */,
+				E2F7E5A71D04A1DF006C4813 /* ComplicationController.swift */,
 				4DF83F011B58957100A30DC7 /* Assets.xcassets */,
 				4DF83F031B58957100A30DC7 /* Info.plist */,
-				E2F7E5A71D04A1DF006C4813 /* ComplicationController.swift */,
 			);
 			path = "TideWatch WatchKit App Extension";
 			sourceTree = "<group>";
