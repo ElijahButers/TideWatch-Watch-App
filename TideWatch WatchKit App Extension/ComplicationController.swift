@@ -30,7 +30,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
   
   func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimelineEntry?) -> Void) {
     
+    let conditions = TideConditions.loadConditions()
+    guard let waterLevel = conditions.currentWaterLevel else {
+      //
     handler(nil)
+    return
+    }
   }
   
   func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
