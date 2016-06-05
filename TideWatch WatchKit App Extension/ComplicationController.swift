@@ -6,8 +6,8 @@
 //  Copyright © 2016 razeware. All rights reserved.
 //
 
-import UIKit
+import ClockKit
 
-class ComplicationController: NSObject {
+class ComplicationController: NSObject, CLKComplicationDataSource {
 
 }
