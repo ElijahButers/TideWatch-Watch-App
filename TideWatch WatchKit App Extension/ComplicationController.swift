@@ -33,7 +33,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     let conditions = TideConditions.loadConditions()
     guard let waterLevel = conditions.currentWaterLevel else {
       //
-    handler(nil)
+//    handler(nil)
     return
     }
     let tideImageName: String
