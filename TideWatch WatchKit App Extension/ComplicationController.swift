@@ -51,6 +51,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
       smallFlat.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: tideImageName)!)
       
       handler(CLKComplicationTimelineEntry(date: waterLevel.date, complicationTemplate: smallFlat))
+    } else {
+      let largeFlat = CLKComplicationTemplateUtilitarianLargeFlat()
+      largeFlat.textProvider = CLKSimpleTextProvider(text: waterLevel.longTextForComplication, shortText: waterLevel.shortTextForComplication)
+      largeFlat.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: tideImageName)!)
+      
+      handler(CLKComplicationTimelineEntry(date: waterLevel.date, complicationTemplate: largeFlat))
     }
   }
   
