@@ -36,6 +36,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     handler(nil)
     return
     }
+    let tideImageName: String
+    switch waterLevel.situation {
+    case .High: tideImageName = "tide_high"
+    case .Low: tideImageName = "tide_low"
+    case .Rising: tideImageName = "tide_rising"
+    case .Falling: tideImageName = "tide_falling"
+    default: tideImageName = "tide_high"
+    }
   }
   
   func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
