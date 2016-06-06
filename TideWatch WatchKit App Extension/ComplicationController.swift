@@ -44,6 +44,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     case .Falling: tideImageName = "tide_falling"
     default: tideImageName = "tide_high"
     }
+    
+    if complication.family == .UtilitarianSmall {
+      let smallFlat = CLKComplicationTemplateUtilitarianSmallFlat()
+      smallFlat.textProvider = CLKSimpleTextProvider(text: waterLevel.shortTextForComplication)
+      smallFlat.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: tideImageName)!)
+      
+      handler(CLKComplicationTimelineEntry(date: waterLevel.date, complicationTemplate: smallFlat))
+    }
   }
   
   func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
